@@ -1,0 +1,125 @@
+@use "../global" as *;
+
+.portfolio-card {
+  display: flex;
+  gap: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  background: $bg-white;
+  padding: 20px;
+  border-radius: 25px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  &__website {
+    min-width: 530px;
+    width: 530px;
+    background-color: hsla(0, 0%, 46%, .2);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    height: 380px;
+    overflow: hidden;
+
+    @media (max-width: 1000px) {
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 700px) {
+      width: 80vw;
+    }
+
+    @media (max-width: 620px) {
+      display: none;
+
+    }
+
+
+    img {
+      width: 100%;
+      height: auto;
+
+    }
+  }
+
+  &__text {
+    max-width: 300px;
+    padding: 15px;
+
+    @media (max-width: 1000px) {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: $p-size;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      font-size: $p-size;
+      color: $text-gray-light;
+      margin-bottom: 30px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  &__tech {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    &-item {
+      font-size: $p-size;
+      background-color: $bg-white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      color: $text-black;
+      font-family: $font-mulish;
+      font-weight: 600;
+      padding: 10px 13px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__links-item {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      cursor: pointer;
+      padding: 15px;
+
+      h3 {
+        margin: auto 0;
+        font-weight: 400;
+      }
+
+      &:hover {
+        h3 {
+          color: $text-blue;
+          transition: all .3s;
+        }
+
+        svg {
+          fill: $text-blue;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@use "../global" as *;
+
+.burger-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: $bg-white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  transition: .5s;
+
+  &__item {
+    font-size: $h2-size;
+    font-weight: 600;
+    color: $text-black;
+  }
+
+  &--hidden {
+    transform: translateX(-100%);
+  }
+}
+
+.burger-cross {
+  position: fixed;
+  right: 35px;
+  top: 20px;
+  z-index: 1001;
+  width: 40px;
+  transition: .5s;
+
+  &--hidden {
+    transform: translateX(-100vw);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px 25px 50px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+  z-index: 200;
+  background: $bg-white;
+
+}
+
+.nav__logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+.nav__list-item {
+  font-size: $p-size;
+  font-weight: 600;
+
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: 850px) {
+    display: block;
+    width: 40px;
+  }
+}

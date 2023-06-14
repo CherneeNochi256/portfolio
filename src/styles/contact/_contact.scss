@@ -1,0 +1,80 @@
+@use "../global" as *;
+
+
+.contact {
+  &__inner {
+    padding: 150px 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $text-blue;
+    font-size: $p-size;
+    margin-bottom: 10px;
+
+    @media (max-width: 850px) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    color: $text-black;
+    font-size: $h2-size;
+    margin-bottom: 70px;
+
+    @media (max-width: 850px) {
+      text-align: center;
+    }
+
+    img {
+      margin-left: 15px;
+      width: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 100px;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    gap: 15px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &-img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+      background: $bg-white;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-title {
+      font-weight: 700;
+      color: $text-black;
+      font-size: $p-size;
+    }
+
+    &-value {
+      font-weight: 400;
+      color: $text-gray;
+      font-size: $p-size;
+    }
+  }
+}

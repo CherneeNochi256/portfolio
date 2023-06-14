@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+
+.footer {
+  background: $bg-black;
+  color: $text-white;
+
+  &__inner {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-weight: 700;
+    font-size: $p-size;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__icons-item {
+    img {
+      filter: invert(100%);
+      width: 30px;
+    }
+  }
+}
