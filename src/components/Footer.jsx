@@ -13,10 +13,14 @@ function Footer(props) {
               </div>
               <ul className="footer__icons">
                 <li className="footer__icons-item">
-                  <img src={github} alt=""/>
+                  <a href="https://github.com/CherneeNochi256">
+                    <img src={github} alt=""/>
+                  </a>
                 </li>
                 <li className="footer__icons-item">
-                  <img src={linkedIn} alt=""/>
+                  <a href="#">
+                    <img src={linkedIn} alt=""/>
+                  </a>
                 </li>
               </ul>
             </div>
