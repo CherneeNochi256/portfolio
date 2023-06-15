@@ -589,11 +589,21 @@ body {
   display: flex;
   gap: 15px;
 }
+@media (max-width: 850px) {
+  .contact__list-item {
+    flex-direction: column;
+  }
+}
 .contact__list-item-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+@media (max-width: 850px) {
+  .contact__list-item-text {
+    text-align: center;
+  }
 }
 .contact__list-item-img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
@@ -604,6 +614,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 850px) {
+  .contact__list-item-img {
+    margin: auto;
+  }
 }
 .contact__list-item-title {
   font-weight: 700;

@@ -47,11 +47,20 @@
     display: flex;
     gap: 15px;
 
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+
     &-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 10px;
+
+      @media (max-width: 850px) {
+        text-align: center;
+
+      }
     }
 
     &-img {
@@ -63,6 +72,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 850px) {
+        margin: auto;
+
+      }
     }
 
     &-title {
