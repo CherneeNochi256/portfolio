@@ -3,7 +3,7 @@ import pointer from '../images/contact/pointer.png'
 import location from "../images/contact/location.png";
 import mail from "../images/contact/mail.png";
 
-function Contact(props) {
+function Contact() {
   return (
       <>
         <div className="contact" id="contact">

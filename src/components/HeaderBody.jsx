@@ -7,7 +7,7 @@ import sass from '../images/header/sass.png'
 import js from '../images/header/js.png'
 
 
-function HeaderBody(props) {
+function HeaderBody() {
   return (
       <>
         <div className="header-body" id="home">
@@ -16,11 +16,11 @@ function HeaderBody(props) {
               <div className="header-body__greeting">
                 <div className="header-body__greeting-text">
                   <h1 className="header-body__position">
-                    Front-End React Developer
+                    Full Stack React-Spring Developer
                     <img src={wavingHand} alt=""/>
                   </h1>
                   <p className="header-body__hello">
-                    Hi, I'm Tutik Maxim. A passionate Front-end React Developer based in Russia, Melitopol.
+                    Hi, I'm Tutik Maxim. A passionate Full-Stack React-Spring Developer based in Russia, Melitopol.
                     📍
                   </p>
                   <div className="header-body__socials">
@@ -58,6 +58,33 @@ function HeaderBody(props) {
                   </li>
                   <li className="header-body__tech-stack-list-item">
                     <img src={sass} alt="sass" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg'} alt="tailwindcss" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg'} alt="typescript" width={34}/>
+                  </li>
+
+
+
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://spring.io/img/logos/spring-initializr.svg'} alt="spring" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg'} alt="hibernate" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-dark-green.svg'} alt="gradle" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://www.svgrepo.com/show/184143/java.svg'} alt="java" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg'} alt="postgresql" width={34}/>
+                  </li>
+                  <li className="header-body__tech-stack-list-item">
+                    <img src={'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png'} alt="docker" width={34}/>
                   </li>
                 </ul>
               </div>

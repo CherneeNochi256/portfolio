@@ -2,7 +2,7 @@ import React from 'react';
 import PortfolioCard from "./PortfolioCard";
 import website from "../images/portfolio/website1.jpg";
 
-function Portfolio(props) {
+function Portfolio() {
   return (
       <>
         <div className="portfolio" id="projects">
@@ -22,6 +22,16 @@ function Portfolio(props) {
                   demoLink={"https://cherneenochi256.github.io/finsweet-clone/"}
                   scrollY={"-90%"}
               />
+                <PortfolioCard
+                    img={'https://raw.githubusercontent.com/CherneeNochi256/crypto-alert-frontend/master/public/crypto-alerts-homepage.jpg'}
+                    title={"CRYPTO ALERTS ₿"}
+                    description={"Crypto Alerts is a website the main goal of which is to help in tracking crypto concurrences. You can write the price of the coin in which you are interested. And when this price is reached you will be notified on the website and on your email ."}
+                    tech1={"React"}
+                    tech2={"Spring"}
+                    codeLink="https://github.com/CherneeNochi256/crypto-alert-frontend"
+                    demoLink={"https://crypto-alerts-app.vercel.app"}
+                    scrollY={"-75%"}
+                />
             </div>
           </div>
         </div>

@@ -267,8 +267,8 @@ body {
   content: "";
   display: block;
   background: #555;
-  height: 25px;
-  width: 2px;
+  height: 110px;
+  width: 3px;
   margin-left: 30px;
 }
 @media (max-width: 850px) {
@@ -281,7 +281,8 @@ body {
   }
 }
 .header-body__tech-stack-list {
-  display: flex;
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(7, auto);
   gap: 40px;
 }
 @media (max-width: 550px) {
@@ -443,6 +444,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 25px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1000px) {
   .portfolio-card {
